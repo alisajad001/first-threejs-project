@@ -16,14 +16,14 @@ scene.background = new THREE.Color('#b8bec6');
  */
 const textureLoader = new THREE.TextureLoader();
 const textures = {
-  'Matcap 1': textureLoader.load('/static/textures/matcaps/1.png'),
-  'Matcap 2': textureLoader.load('/static/textures/matcaps/2.png'),
-  'Matcap 3': textureLoader.load('/static/textures/matcaps/3.png'),
-  'Matcap 4': textureLoader.load('/static/textures/matcaps/4.png'),
-  'Matcap 5': textureLoader.load('/static/textures/matcaps/5.png'),
-  'Matcap 6': textureLoader.load('/static/textures/matcaps/6.png'),
-  'Matcap 7': textureLoader.load('/static/textures/matcaps/7.png'),
-  'Matcap 8': textureLoader.load('/static/textures/matcaps/8.png'),
+  'Matcap 1': textureLoader.load('/textures/matcaps/1.png'),
+  'Matcap 2': textureLoader.load('/textures/matcaps/2.png'),
+  'Matcap 3': textureLoader.load('/textures/matcaps/3.png'),
+  'Matcap 4': textureLoader.load('/textures/matcaps/4.png'),
+  'Matcap 5': textureLoader.load('/textures/matcaps/5.png'),
+  'Matcap 6': textureLoader.load('/textures/matcaps/6.png'),
+  'Matcap 7': textureLoader.load('/textures/matcaps/7.png'),
+  'Matcap 8': textureLoader.load('/textures/matcaps/8.png'),
 };
 
 let currentTexture = textures['Matcap 3'];
@@ -56,7 +56,7 @@ const textProps = (font) => ({
   bevelSegments: 5,
 });
 
-fontLoader.load('/static/fonts/helvetiker_regular.typeface.json', (font) => {
+fontLoader.load('/fonts/helvetiker_regular.typeface.json', (font) => {
   const textGeometry = new TextGeometry('Developer', textProps(font));
   const textGeometry2 = new TextGeometry('Designer', textProps(font));
 
